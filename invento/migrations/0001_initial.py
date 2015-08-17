@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Vendors',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(verbose_name='ID', serialize=True, auto_created=True, primary_key=True)),
                 ('vendor_id', models.IntegerField()),
                 ('vendor_name', models.CharField(max_length=100)),
                 ('address', models.CharField(max_length=500)),
